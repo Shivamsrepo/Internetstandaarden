@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore artists | SoundSpot</title>
+    <link rel="stylesheet" href="assets/style/index1.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-icon">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="artists.html">Explore artists</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="#">Agenda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="banner" class="slide-up1">Explore artists</h1>
+        <section class="flex-blocks_artist">
+            <article class="flex-block_artist fade2">
+                <a href="artists_overview_fred.html">
+                    <h3>Fred again</h3>
+                    <img src="assets/img/fred-again.jpg" alt="Fred Again cover">
+                    <p class="right-align">Read more here></p>
+                </a>
+            </article>
+
+            <article class="flex-block_artist fade2">
+                <a href="artists_overview_drake.html">
+                    <h3>Drake</h3>
+                    <img src="assets/img/drake.jpg" alt="Drake cover">
+                    <p class="right-align">Read more here></p>
+                </a>
+            </article>
+            <article class="flex-block_artist fade2">
+                <a href="#">
+                    <h3>Nia Archives</h3>
+                    <img src="assets/img/nia-archives.jpg" alt="Nia Archives cover">
+                    <p class="right-align">Read more here></p>
+                </a>
+            </article>
+            <article class="flex-block_artist fade2">
+                <a href="#">
+                    <h3>Jarreau Vandal</h3>
+                    <img src="assets/img/jarreau-vandal.jpg" alt="Jarreau Vandal cover">
+                    <p class="right-align">Read more here></p>
+                </a>
+            </article>
+            <article class="flex-block_artist fade2">
+                <a href="#">
+                    <h3>Uncle Waffles</h3>
+                    <img src="assets/img/uncle-waffels.jpg" alt="uncle waffles cover">
+                    <p class="right-align">Read more here></p>
+                </a>
+            </article>
+            <article class="flex-block_artist fade2">
+                <a href="#">
+                    <h3>Pop smoke</h3>
+                    <img src="assets/img/pop-smoke.jpg" alt="Pop Smoke cover">
+                    <p class="right-align">Read more here></p>
+                </a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- <footer></footer> -->
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.menu-icon').click(function () {
+            $('ul').toggleClass('show');
+        });
+    });
+</script>
+
+</html>
