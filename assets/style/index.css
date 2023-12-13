@@ -1,18 +1,16 @@
 /* lettertype ophalen */
 @font-face {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     src: url(../fonts/Poppins/Poppins-Bold.ttf);
-
 }
 
 @font-face {
-    font-family: 'Poppins-SemiBold';
+    font-family: "Poppins-SemiBold";
     src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
-
 }
 
 @font-face {
-    font-family: 'Poppins-SemiBoldItalic';
+    font-family: "Poppins-SemiBoldItalic";
     src: url(../fonts/Poppins/Poppins-SemiBoldItalic.ttf);
 }
 
@@ -20,7 +18,7 @@ h1,
 h2,
 h3,
 p {
-    font-family: 'Poppins-SemiBold', sans-serif;
+    font-family: "Poppins-SemiBold", sans-serif;
 }
 
 /* einde lettertype */
@@ -66,7 +64,7 @@ p {
     from {
         transform: translate3d(0, 100%, 0);
         opacity: 0;
-        color: #fff
+        color: #fff;
     }
 
     to {
@@ -88,9 +86,6 @@ p {
     animation: slide-up 2s;
 }
 
-
-
-
 * {
     box-sizing: border-box;
     margin: 0 auto;
@@ -98,8 +93,11 @@ p {
 }
 
 body {
-    background: linear-gradient(291deg, rgb(175 175 175 / 35%), rgb(175 175 175 / 45%)), url(../img/background.jpg);
-    background-repeat: inherit;
+    background: linear-gradient(291deg,
+            rgb(175 175 175 / 35%),
+            rgb(175 175 175 / 45%)),
+        url(../img/background.jpg);
+    background-repeat: repeat;
 }
 
 a {
@@ -111,7 +109,7 @@ header {
     background-color: #424242;
     color: #fff;
     padding: 25px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 nav ul {
@@ -125,8 +123,7 @@ nav li {
 }
 
 nav a {
-    color: #9D9D9D;
-
+    color: #9d9d9d;
 }
 
 .active {
@@ -158,27 +155,23 @@ main {
     font-weight: 800;
     text-align: center;
     margin-top: 10%;
-    font-family: 'Poppins-SemiBoldItalic', sans-serif;
+    font-family: "Poppins-SemiBoldItalic", sans-serif;
 }
 
 /* begin index pagina */
 
-/* .koptexth2 {
-    text-align: center;
-    font-size: 2vw;
-} */
 
-.flex-blocks {
+.flex-blocks-index {
     display: flex;
     justify-content: center;
     margin: 2.4em 0;
 }
 
-.flex-blocks a {
+.flex-blocks-index a {
     color: #333;
 }
 
-.flex-block {
+.flex-block-index {
     margin: 1.56em;
     padding: 0.6em;
     text-align: center;
@@ -189,20 +182,26 @@ main {
     color: #666;
 }
 
-.flex-block img {
+.flex-block-index:hover {
+    background-color: rgba(214, 214, 214, 0.79);
+    border-radius: 4px;
+    box-shadow: 0 0 0.6em rgba(50, 50, 50, 0.51);
+}
+
+.flex-block-index img {
     max-width: 50%;
     height: auto;
     margin-bottom: 0.6em;
 }
 
-.flex-block h3 {
+.flex-block-index h3 {
     color: #333;
 }
-
 
 /* einde index */
 
 /* css voor artists */
+
 .flex-blocks_artist {
     display: flex;
     flex-wrap: wrap;
@@ -238,11 +237,55 @@ main {
     margin: 0.6em 0.3em;
 }
 
+
+/* update pagina */
+
+.flex-blocks_update {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2.4em 0;
+}
+
+.flex-blocks_update a {
+    text-decoration: none;
+    color: #333;
+}
+
+.flex-block_update {
+    flex-basis: calc(45% - 10px);
+    margin: 1.4em;
+    padding: 0.7em 0.7em;
+    text-align: center;
+    border: 1px solid #bbb;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.1);
+    color: #666;
+}
+
+.flex-block_update h3 {
+    color: #333;
+    margin-top: 0.2em;
+}
+
+.flex-block_update p{
+    text-align: end;
+    padding: 1.2em 1.2em;
+}
+
+.flex-block_update img {
+    float: left;
+    max-width: 40%;
+    height: auto;
+    margin: 0.6em 0.3em;
+}
+.flex-block_update  .right-align {
+    color: #65aa3b;
+}
+
 /* css voor artist overview */
-/* 
-/* 
-/*
-*/
+
 .thumbnail-bg {
     background-color: #65aa3b;
     height: 30vh;
@@ -291,7 +334,7 @@ main {
 }
 
 .grid-foto .portret-img-mid {
-    width: 10vh;
+    width: 8em;
 }
 
 .grid-foto {
@@ -301,13 +344,13 @@ main {
     align-items: center;
     justify-content: space-between;
     overscroll-behavior: none;
-    padding: 2vw 1vw;
+    padding: 1em 1em;
     justify-content: center;
 
 }
 
 .grid-foto img {
-    width: 20vh;
+    width: 15em;
     height: auto;
     margin-bottom: 0.3em;
 }
@@ -348,9 +391,8 @@ main {
 }
 
 .album-item img {
-    width: 75px;
+    width: 10%;
     height: auto;
-
 }
 
 .kopname {
@@ -359,54 +401,27 @@ main {
 
 /* einde  artist overview */
 
-/* begin update pagina */
+/* 404 pagina */
 
-
-
-.flex-blocks_update {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2.4em 0;
-}
-
-.flex-blocks_update a {
-    text-decoration: none;
-    color: #333;
-}
-
-.flex-block_update {
-    flex-basis: calc(45% - 10px);
-    margin: 1.56em;
-    padding: 0.1em 0.4em;
-    text-align: center;
-    border: 1px solid #bbb;
-    background-color: rgba(255, 255, 255, 0.9);
+.divbg{
+    background-color:#fff;
+    width: 50vw;
+    margin: 0 auto;
     border-radius: 8px;
-    box-shadow: 0 0 0.6em rgba(0, 0, 0, 0.1);
-    color: #666;
+    padding: 3em;
+
 }
 
-.flex-block_updatet h3 {
-    color: #333;
-    margin-top: 0.2em;
+.divbg a{
+    color:#65aa3b;
 }
-
-.flex-block_update img {
-    max-width: 70%;
-    height: auto;
-    margin: 0.6em 0.3em;
+.divbg a:hover{
+    color:#b01c1c;
 }
-
-
-/* einde update pagina */
-
-
 
 /* media querie voor wanneer je scherm kleiner is dan 720px */
 @media only screen and (max-width: 720px) {
-
-    li {
+    nav>li {
         display: none;
     }
 
@@ -415,7 +430,7 @@ main {
         cursor: pointer;
     }
 
-    ul {
+    nav>ul {
         flex-direction: row;
         align-items: center;
         position: absolute;
@@ -427,28 +442,25 @@ main {
         display: none;
     }
 
-    ul.show {
+    nav>ul.show {
         display: flex;
-        padding: 20px;
+        padding: 1.2em;
     }
 
     #banner {
         font-size: 3.5em;
     }
 
-    .flex-blocks {
+    .flex-blocks-index {
         flex-wrap: wrap;
     }
 
-    .flex-block {
+    .flex-block-index {
         display: block;
         flex-direction: column;
     }
 
-    .koptexth2 {
-        text-align: center;
-        font-size: 1.56em;
-    }
+    /* artist overview */
 
     .flex-block_artist {
         flex-basis: auto;
@@ -459,19 +471,21 @@ main {
     }
 
     .artist-items img {
-        width: 10vh;
+        width: 8em;
+    }
+    .flex-block_update {
+        flex-basis: auto;
     }
 
-    .grid-foto img {
-        width: 20vh;
+    /* artist overview fred*/
+    .album-item img {
+        width: 80px;
+        height: auto;
     }
-
-    .grid-foto {
-        gap: 1vw;
-        padding: 2vw 1vw;
-        justify-content: center;
+    
+    .divbg{
+        width: 100%;
     }
-
 }
 
 /* einde media querie */
