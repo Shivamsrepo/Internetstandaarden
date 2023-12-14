@@ -303,16 +303,15 @@ footer {
 
 /* css voor artist overview */
 
-.thumbnail-bg ~body{
-    display: block;
-}
+
 
 .thumbnail-bg {
     background-color: #65aa3b;
+    width: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 30vh;
-    width: auto;
-    position: relative;
-    z-index: 1;
 }
 
 .artist-overview {
