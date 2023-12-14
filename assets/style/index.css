@@ -97,8 +97,8 @@ body {
             rgb(175 175 175 / 35%),
             rgb(175 175 175 / 45%)),
         url(../img/background.jpg);
-    /* background-repeat: repeat; */
-width: 100vw;
+    background-repeat: repeat;
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -114,7 +114,8 @@ header {
     color: #fff;
     padding: 25px;
     font-family: "Poppins", sans-serif;
-    min-width: 100%;
+    width: 100%;
+    
 }
 
 nav ul {
@@ -169,7 +170,8 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
-    min-width: 100%;
+    width: 100%;
+
 }
 
 /* begin index pagina */
