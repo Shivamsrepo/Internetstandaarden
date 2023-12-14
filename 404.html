@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/style/index.css">
 </head>
 <body>
-    
     <header>
         <div class="menu-icon">&#9776;</div>
         <nav>
@@ -20,28 +19,42 @@
         </nav>
     </header>
 
-     <main>
+    <main>
         <h1 id="banner" class="slide-up1"> SoundSpot</h1>
 
-       <section class="flex-blocks-index divbg">
-          <div class="flex-block  fade2">
-            <h2>This page is not found</h2>
-            <p>Oops! It looks like something went wrong.</p>
-            <p>Please check the URL or go back to the <a href="index.html">Home page</a></p>
-            <h2><a href="index.html">Go to home</a></h2>
-          </div>
+        <section class="flex-blocks-index divbg">
+            <div class="flex-block  fade2">
+                <h2>This page is not found</h2>
+                <p>Oops! It looks like something went wrong.</p>
+                <p>Please check the URL or go back to the <a href="index.html">Home page</a></p>
+                <h2><a href="index.html">Go to home</a></h2>
+
+                <h2 onclick="goBack()"><a>Or press here to go to ur last page--></a></h2>
+            </div>
+        </section>
     </main>
 
-    
-    <!-- <footer></footer> -->
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2023 SoundSpot.</p>
+            <p>Contact: info@SoundSpot.nl</p>
+        </div>
+    </footer>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('.menu-icon').click(function() {
-            $('ul').toggleClass('show');
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-icon').click(function () {
+                $('ul').toggleClass('show');
+            });
+            $('#nav-banner').click(function () {
+                $('ul').toggleClass('show');
+            });
         });
-    });
-</script>
+
+        function goBack(){
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

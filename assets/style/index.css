@@ -98,6 +98,10 @@ body {
             rgb(175 175 175 / 45%)),
         url(../img/background.jpg);
     background-repeat: repeat;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -110,6 +114,8 @@ header {
     color: #fff;
     padding: 25px;
     font-family: "Poppins", sans-serif;
+    width: 100vw;
+    ;
 }
 
 nav ul {
@@ -134,6 +140,7 @@ nav a {
     display: none;
 }
 
+
 /* einde navbor */
 main {
     max-width: 1200px;
@@ -156,6 +163,15 @@ main {
     text-align: center;
     margin-top: 10%;
     font-family: "Poppins-SemiBoldItalic", sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+
 }
 
 /* begin index pagina */
@@ -269,7 +285,7 @@ main {
     margin-top: 0.2em;
 }
 
-.flex-block_update p{
+.flex-block_update p {
     text-align: end;
     padding: 1.2em 1.2em;
 }
@@ -280,7 +296,8 @@ main {
     height: auto;
     margin: 0.6em 0.3em;
 }
-.flex-block_update  .right-align {
+
+.flex-block_update .right-align {
     color: #65aa3b;
 }
 
@@ -323,6 +340,7 @@ main {
 
 .artist-items p {
     color: #333;
+    margin-left: 1em;
 }
 
 .artist-items a {
@@ -391,7 +409,7 @@ main {
 }
 
 .album-item img {
-    width: 10%;
+    width: 15%;
     height: auto;
 }
 
@@ -403,8 +421,8 @@ main {
 
 /* 404 pagina */
 
-.divbg{
-    background-color:#fff;
+.divbg {
+    background-color: #fff;
     width: 50vw;
     margin: 0 auto;
     border-radius: 8px;
@@ -412,11 +430,12 @@ main {
 
 }
 
-.divbg a{
-    color:#65aa3b;
+.divbg a {
+    color: #65aa3b;
 }
-.divbg a:hover{
-    color:#b01c1c;
+
+.divbg a:hover {
+    color: #b01c1c;
 }
 
 /* media querie voor wanneer je scherm kleiner is dan 720px */
@@ -470,20 +489,19 @@ main {
         width: 100%;
     }
 
-    .artist-items img {
-        width: 8em;
-    }
+
+
     .flex-block_update {
         flex-basis: auto;
     }
 
     /* artist overview fred*/
     .album-item img {
-        width: 80px;
+        width:17%;
         height: auto;
     }
-    
-    .divbg{
+
+    .divbg {
         width: 100%;
     }
 }
